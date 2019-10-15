@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap&subset=korean');
+* {font-family: 'Stylish', sans-serif;}
+body { margin: 0px;
+    font-size: 20px;}
+ul,
+a,
+li {color: #474544; list-style: none; text-align: left;text-decoration: none;}
+header {
+    margin: 0 auto;
+    display: table;
+}
+header a {height: 0px;}
+header a img{
+    width: 200px;
+    height: 200px;
+}
+.active { 
+    background-color: #FFCBA4;
+    border-radius: 15px;
+}
+.gnb {
+    width: 960px;
+    padding: 0;
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 5px dotted #FFCBA4;
+    height: 50px;
+}
+.gnb .main {padding: 0;display: block;}
+.gnb .main>li {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.gnb li ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-left: 0;
+    top: 45px;
+    left: 0px;
+    z-index: 1;
+    background-color: #FFCBA4;
+    font-size: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.gnb li:hover ul{display: block; transition:5s;}
+.gnb li .sub a { padding-left: 10px;}
+/*.gnb .js-sub .subOn{
+    display: none;
+    /* position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    background-color: #FFCBA4;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.main .subOn>li {
+    padding-bottom: 15px;
+    text-align: center;
+} */
+.gnb li:hover {
+    background-color: #FFCBA4;
+    border-radius: 15px;
+    display: block;
+    transition:1s;
+}
+
+.gnb a:hover{color: white;transition: 1s;}
+
+
+footer{width :960px;margin: 0 auto;}
+footer address {
+    width: 960px;
+    margin-top: 20px;
+    font-size : 15px;
+    text-align: center;
+    font-style: normal;
+}
+footer address span {
+    color: red;
+}
+
+.check{border: 1px solid black}

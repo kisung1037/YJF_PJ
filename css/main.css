@@ -1,0 +1,11 @@
+.content {
+    display: block;
+    width: 960px;
+    height: 680px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.content img {
+    width: 960px;height: 680px
+}
