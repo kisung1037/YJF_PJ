@@ -1,3 +1,51 @@
+var canvas = document.querySelector("#myCanvas");
+var context = canvas.getContext("2d");
+var time;
+
+context.fillStyle="#000000";
+context.font="25px Stylish";
+
+setInterval(drawCan, 1000);
+
+function drawCan(){
+    context.clearRect(0,0,canvas.width,canvas.height);
+    calcTime();
+    context.fillText(time, 500,40);
+}
+
+function calcTime(){
+    var d = new Date();
+    var hour = d.getHours();
+    var min = d.getMinutes();
+    var sec = d.getSeconds();
+    time = hour+" : "+min+" : "+sec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var MSUB = document.querySelectorAll(".js-sub"),
 //     MDSUB = document.querySelectorAll(".sub")
 
@@ -52,8 +100,3 @@
 //         SUB2_CL.add("sub")
 //     }
 // }
-
-function init() {
-}
-
-init();
